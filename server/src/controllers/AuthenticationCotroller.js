@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 process.env.SECRET_KEY = 'secret';
 
 module.exports = {
-    async register(req, res) {
+    async register(req, res, ) {
         const today = new Date();
         const UserData = {
             email: req.body.email,
